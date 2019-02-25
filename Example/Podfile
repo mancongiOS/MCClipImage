@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'MCClipImage_Example' do
+  pod 'MCClipImage', :path => '../'
+
+  target 'MCClipImage_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

@@ -1,0 +1,22 @@
+{
+  "name": "MCClipImage",
+  "version": "0.1.0",
+  "summary": "A short description of MCClipImage.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/562863544@qq.com/MCClipImage",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "562863544@qq.com": "13761066392@163.com"
+  },
+  "source": {
+    "git": "https://github.com/562863544@qq.com/MCClipImage.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "MCClipImage/Classes/**/*"
+}

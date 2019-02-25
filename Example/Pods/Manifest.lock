@@ -1,0 +1,16 @@
+PODS:
+  - MCClipImage (0.1.0)
+
+DEPENDENCIES:
+  - MCClipImage (from `../`)
+
+EXTERNAL SOURCES:
+  MCClipImage:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MCClipImage: 6e11f5642d5634664dddb2d0f92baf6a6095f59c
+
+PODFILE CHECKSUM: b73891a22810dc715059fa0f0badbdeae6f99aa1
+
+COCOAPODS: 1.5.3
