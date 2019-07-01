@@ -1,6 +1,6 @@
 {
   "name": "MCClipImage",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "summary": "图片的处理，自定义裁剪比例，图片旋转，裁剪圆形图片",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/mancongiOS",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/mancongiOS/MCClipImage.git",
-    "tag": "1.0.1"
+    "tag": "1.0.2"
   },
   "platforms": {
     "ios": "8.0"

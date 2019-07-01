@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MCClipImage'
-  s.version          = '1.0.1'
+  s.version          = '1.0.2'
   s.summary          = '图片的处理，自定义裁剪比例，图片旋转，裁剪圆形图片'
 
 # This description is used to generate tags and improve search results.

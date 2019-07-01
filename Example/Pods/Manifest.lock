@@ -1,9 +1,9 @@
 PODS:
-  - MCClipImage (1.0.1):
-    - MCClipImage/MCClipImage (= 1.0.1)
-    - MCClipImage/MCPickerImageHelper (= 1.0.1)
-  - MCClipImage/MCClipImage (1.0.1)
-  - MCClipImage/MCPickerImageHelper (1.0.1)
+  - MCClipImage (1.0.2):
+    - MCClipImage/MCClipImage (= 1.0.2)
+    - MCClipImage/MCPickerImageHelper (= 1.0.2)
+  - MCClipImage/MCClipImage (1.0.2)
+  - MCClipImage/MCPickerImageHelper (1.0.2)
 
 DEPENDENCIES:
   - MCClipImage (from `../`)
@@ -13,7 +13,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  MCClipImage: 76ca74b38fc44e2991ce015cc015fe5a663b0810
+  MCClipImage: 30d33cf3be154f69e975adf1ae020481acd75ea3
 
 PODFILE CHECKSUM: b73891a22810dc715059fa0f0badbdeae6f99aa1
 
