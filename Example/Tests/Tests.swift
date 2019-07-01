@@ -1,5 +1,5 @@
 import XCTest
-import MCClipImage
+//import MCClipImage
 
 class Tests: XCTestCase {
     

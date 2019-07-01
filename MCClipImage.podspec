@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MCClipImage'
-  s.version          = '0.0.1'
+  s.version          = '1.0.1'
   s.summary          = '图片的处理，自定义裁剪比例，图片旋转，裁剪圆形图片'
 
 # This description is used to generate tags and improve search results.
@@ -31,12 +31,21 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'MCClipImage/Classes/**/*'
-  
-   s.resource_bundles = {
+
+  s.resource_bundles = {
      'MCClipImageBundle' => ['MCClipImage/Assets/*.png']
    }
+  
+  
+  s.subspec 'MCClipImage' do |ss|
+    ss.source_files = "MCClipImage/Classes/MCClipImage/*.swift"
+  end
+  s.subspec 'MCPickerImageHelper' do |ss|
+    ss.source_files = "MCClipImage/Classes/MCPickerImageHelper/*.swift"
+  end
+  
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+
+  
+  
 end

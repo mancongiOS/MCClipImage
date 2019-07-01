@@ -18,6 +18,10 @@
 	<string>1.0</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict/>
+	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
@@ -35,5 +39,9 @@
 		<string>UIInterfaceOrientationPortrait</string>
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 	</array>
+	<key>NSCameraUsageDescription</key>
+	<string>需要访问您的相机，以便您正常使用拍摄、购物、修改个人资料等服务</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>需要访问您的相册，以便您正常使用购物、修改个人资料等服务</string>
 </dict>
 </plist>

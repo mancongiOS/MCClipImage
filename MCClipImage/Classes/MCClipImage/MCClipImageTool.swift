@@ -7,6 +7,43 @@
 //
 
 import UIKit
+import Foundation
+import UIKit
+
+
+
+
+
+
+
+
+
+
+
+extension UIAlertController {
+    
+    public static func showActionSheet(on vc : UIViewController, items:[MCClipImageScaleType],confirm : ((Int,CGFloat) -> Void)?, cancel: ((UIAlertAction)->Void)? = nil) {
+        
+        let alter = UIAlertController.init(title: "重设裁切框的比例", message: nil, preferredStyle: .actionSheet)
+        
+        let cancle = UIAlertAction.init(title: "取消", style: .cancel, handler: cancel)
+        
+        var index = 0
+        for item in items {
+            let i = index
+            let confirm = UIAlertAction.init(title: item.describe(), style: UIAlertAction.Style.default) { (b) in
+                confirm?(i,item.rawValue)
+            }
+            alter.addAction(confirm)
+            index += 1
+        }
+        alter.addAction(cancle)
+        vc.present(alter, animated: true, completion: nil)
+    }
+}
+
+
+
 
 extension UIImage {
     
@@ -158,25 +195,52 @@ extension UIImage {
 }
 
 
-
 @objc extension Bundle {
     
     /**
-     * 获取bundle的路径。
+     * 加载指定bundle下的图片资源
+     * bundleName bundle的名字
+     * podName    pod的名字
+     * imageName  图片的名字
+     
+     * @return UIImage
      */
-    @objc func getBundlePath(bundleName:String) -> String {
-        let bundlePath = self.resourcePath!.appending("/\(bundleName).bundle")
-        return bundlePath
-    }
-    
-    
-    /**
-     * 加载指定bundle路径下的图片
-     */
-    @objc func loadImageFromBundleName(_ bundleName:String,imageName:String) -> UIImage {
-        let resource_bundle = Bundle.init(path: self.getBundlePath(bundleName: bundleName))
-        let image = UIImage.init(named: imageName, in: resource_bundle, compatibleWith: nil)
-        return image ?? UIImage.init()
+    public static func MCLoadImageFromBundleName(_ bundleName:String, podName:String, imageName: String) -> UIImage? {
+        
+        
+        var associateBundleURL = Bundle.main.url(forResource: "Frameworks", withExtension: nil)
+        associateBundleURL = associateBundleURL?.appendingPathComponent(podName)
+        associateBundleURL = associateBundleURL?.appendingPathExtension("framework")
+        
+        
+        if associateBundleURL == nil {
+            print("获取bundle失败")
+            return nil
+        }
+        
+        
+        let associateBunle = Bundle.init(url: associateBundleURL!)
+        associateBundleURL = associateBunle?.url(forResource: bundleName, withExtension: "bundle")
+        
+        if let bundleURL = associateBundleURL {
+            let bundle = Bundle.init(url: bundleURL)
+            let scale = Int(UIScreen.main.scale)
+            
+            // 适配2x还是3x图片
+            let name = imageName + "@" + String(scale) + "x"
+            let path = bundle?.path(forResource: name, ofType: "png")
+            
+            if path == nil {
+                print("获取bundle失败")
+                return nil
+            }
+            
+            let image1 = UIImage.init(contentsOfFile: path!)
+            return image1
+        }
+        
+        return nil
+
     }
 }
 

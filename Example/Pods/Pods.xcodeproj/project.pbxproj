@@ -7,392 +7,562 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0D26B5CE1D29211E2058F2A687057339 /* Pods-MCClipImage_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 34AA42C9E2CFA88ACB4C3C8233D8EEBE /* Pods-MCClipImage_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1D3F471BFE815F61C0964AC205EAE4CA /* MCClipImage-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B8612F601A134E3D78DF9114B867D0EE /* MCClipImage-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3D6E3C9E66DCD425BE7A524BC3322698 /* Pods-MCClipImage_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 37485A1A1DD7365ABCCC51C9B65E3890 /* Pods-MCClipImage_Example-dummy.m */; };
-		4177366B2198AACC15C31118C6989AB1 /* Pods-MCClipImage_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 93BAC24D154CD8E7DF426471D7079176 /* Pods-MCClipImage_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6428A84EADFF8BDAA82BEA3C3F4E6B97 /* MCClipImageFunctionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D663B46E9EA29581CF3A190D8882BC9E /* MCClipImageFunctionView.swift */; };
-		66A2ED6EDEFD37AC28C40560E9D2F651 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		66BE13067A89D8034B11B4A9D41D3C23 /* MCClipImage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B6F04A1F1B6B9C73F7A513FD9A6F20B /* MCClipImage-dummy.m */; };
-		7520DECF5F051EB332CBAB39B4516B5F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		931501995011B7C176913B828852F272 /* Pods-MCClipImage_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A3C81DDCB1FBD61C23BE1B1B518E56 /* Pods-MCClipImage_Tests-dummy.m */; };
-		CAD61EF2339387D986DF0D28DF23382F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		D357BCA3378BC568CFE549D2D813269D /* MCClipImageTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0193E1566143BC04C93ED345F35852 /* MCClipImageTool.swift */; };
-		F4ACD40E6CB936B9CF9F619C752AAA49 /* MCClipImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7540304DE7865526BE56599B4056ADCE /* MCClipImageViewController.swift */; };
+		08C6AE257A288D063D83129EF7B31D77 /* ClipImage_setting@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C70A717FE36CA4933BD5BE53B5E7F43 /* ClipImage_setting@3x.png */; };
+		0F20D8A3B7B8C9EE3D7F1C1F6446552D /* ClipImage_cancel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28C3181A9E2D1F6A4C2A4C90661197D1 /* ClipImage_cancel@2x.png */; };
+		21A37A6396541FE58A08EE15B5190F48 /* Pods-MCClipImage_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 39A79DC4AC9BD965CDFD784F6EBDD4D3 /* Pods-MCClipImage_Tests-dummy.m */; };
+		221856CC9EB1DB4DD9531C241391B6F2 /* MCClipImageToolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5EEECA5457FFEB832BDB73E0D4E181 /* MCClipImageToolBar.swift */; };
+		27C8178E0BD715A751447CEC952CBF71 /* MCClipImage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A38900E56D46A477E6DBBB0E28E5BF77 /* MCClipImage-dummy.m */; };
+		28DA52A89CE235E8D1035208B46C53A4 /* ClipImage_rotating@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CD6FD999AA2188B768572B66A33B2CD /* ClipImage_rotating@2x.png */; };
+		29020A9EAED016EF90695DA97ECA6D43 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		4494AFEBCDB9994BCBF28368D9BBC6BE /* Pods-MCClipImage_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D86847359513959F88F820B0080B1A /* Pods-MCClipImage_Example-dummy.m */; };
+		4B7AAEA55C3A9FC3F2455268E4E96DF8 /* ClipImage_setting@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C13934C48E14C1AAC082CFC10DDEB6F /* ClipImage_setting@2x.png */; };
+		5FD234B035E18D11AB65B5F3534C2519 /* Pods-MCClipImage_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FFC2EF44048A655F599741CA4F87222F /* Pods-MCClipImage_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		66CA2FFB6F625B1CD06A807F00C8B599 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C47228E6D8E9130186432B8BA3BB167 /* UIImage+Extension.swift */; };
+		67F8240AAC12B65E37D9D0B4B1E1C011 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		6811A4479169630858D1EADFB88F5814 /* ClipImage_sure@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 121BAE4E89FBFDD13038C103D828C228 /* ClipImage_sure@2x.png */; };
+		6A5DB304C3DFCA33F0E6AE33C50689A4 /* MCClipImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B484C1D8B18D2647A810BE9CA19436 /* MCClipImageViewController.swift */; };
+		8B623A9819809B495C5AA08DF59B0B5D /* Pods-MCClipImage_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 36AECEF991610F6B56992A57E130406B /* Pods-MCClipImage_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		95C6A762FB150DE52C647D3BBD7CAEAA /* MCClipImageBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 44E542B298F5A4C474302DD636704FD4 /* MCClipImageBundle.bundle */; };
+		961D883F9910C35D17495A539A551963 /* ClipImage_sure@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 06F8AAEA7B4DA6FC1AA70CD951A7E22D /* ClipImage_sure@3x.png */; };
+		96DA5A92BC6E2952017E0B87DF7FD4CE /* MCClipImageConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0248CFD0EC067288A5D6DA7C18BA6BFE /* MCClipImageConfig.swift */; };
+		A12524BC89852A047AA6C380FDE26F9D /* ClipImage_rotating@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C258F2669861060130A50C539AEAF11F /* ClipImage_rotating@3x.png */; };
+		BDDA318F0CAD2DA9123043C4A85DC65C /* ClipImage_cancel@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F09D808010BCA34AB366DD618B1CDFB7 /* ClipImage_cancel@3x.png */; };
+		BFC1836CFADACB3F6557C1391A1668C2 /* MCPickerImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69220D8C473038612824BC5333B3F52C /* MCPickerImageHelper.swift */; };
+		D577A58B440C65E2870C6AC5C130E6C8 /* MCClipImage-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 34C67F478C65738E9E4E5D073760E659 /* MCClipImage-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EBA78DC6D5FCE151210FD1FAAA5410FE /* MCClipImageTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = A938B585EBF23DA7BA3CB855865BF97B /* MCClipImageTool.swift */; };
+		F3F2EE67DC9A5309F9AB15DB49D7332F /* UIImagePickerController+Extension .swift in Sources */ = {isa = PBXBuildFile; fileRef = 4604823145AE98FD8234C2E64A464432 /* UIImagePickerController+Extension .swift */; };
+		FE2B203349FB14CA7D2BFA4571607D6D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		329DACB61E01423C9235176A4DE38F0E /* PBXContainerItemProxy */ = {
+		282918EA7BC17005F20ED1246B25E807 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = D640B7DA3FC09E6603E85AC1EFC76FA2;
-			remoteInfo = "Pods-MCClipImage_Example";
+			remoteGlobalIDString = BBF158DA077900644CCCD75F83220219;
+			remoteInfo = "MCClipImage-MCClipImageBundle";
 		};
-		5C5C63472C8B8470B17A9B9C7DA3FEE2 /* PBXContainerItemProxy */ = {
+		519FA9E6CA6C9D2415CA022C4D00E951 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 23C1F5665815E4AE7AF724A4406888D7;
+			remoteGlobalIDString = DC9F1BD3048E39586383BF775224CC7D;
 			remoteInfo = MCClipImage;
+		};
+		7FEE3EC46EF84BAF4B778D8B15820276 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B5145E80179655F07402F69BCFDB9DFC;
+			remoteInfo = "Pods-MCClipImage_Example";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0AFD81B1C1C8DA77F2597C613B611F60 /* Pods-MCClipImage_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MCClipImage_Example.modulemap"; sourceTree = "<group>"; };
-		0F357F7A4835B3EA6421E4857E96D446 /* MCClipImage.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = MCClipImage.podspec; sourceTree = "<group>"; };
-		0F48066AC19FB7A24C4795DF2B7903CE /* Pods-MCClipImage_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MCClipImage_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		1886BBFD98B0EBBA70B9CF852659D997 /* Pods-MCClipImage_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MCClipImage_Example-resources.sh"; sourceTree = "<group>"; };
-		19977611B239AA046B95DCB781FF7D53 /* Pods_MCClipImage_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MCClipImage_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1D0983806447B0F2E16DCBC16F759F71 /* Pods-MCClipImage_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MCClipImage_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		28C798A090AF3178FF73ECF03F90EEA5 /* Pods-MCClipImage_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MCClipImage_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		34AA42C9E2CFA88ACB4C3C8233D8EEBE /* Pods-MCClipImage_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MCClipImage_Tests-umbrella.h"; sourceTree = "<group>"; };
-		37485A1A1DD7365ABCCC51C9B65E3890 /* Pods-MCClipImage_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MCClipImage_Example-dummy.m"; sourceTree = "<group>"; };
-		4B6F04A1F1B6B9C73F7A513FD9A6F20B /* MCClipImage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MCClipImage-dummy.m"; sourceTree = "<group>"; };
-		52287325061CA0B899CB6734FA0EF4F3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		586640660CAE05428824A7FAFA030536 /* Pods-MCClipImage_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MCClipImage_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		634EEA179D8B762512F3872F02C5CFA7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		63A020E9AB86337B298069D553583AFF /* Pods-MCClipImage_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MCClipImage_Tests-resources.sh"; sourceTree = "<group>"; };
-		6F0193E1566143BC04C93ED345F35852 /* MCClipImageTool.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MCClipImageTool.swift; path = MCClipImage/Classes/MCClipImageTool.swift; sourceTree = "<group>"; };
-		7540304DE7865526BE56599B4056ADCE /* MCClipImageViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MCClipImageViewController.swift; path = MCClipImage/Classes/MCClipImageViewController.swift; sourceTree = "<group>"; };
-		7B90A73152A030E8EE4FDE281373ED1E /* Pods-MCClipImage_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MCClipImage_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		8F0B4690736EDCB7B2E9A636A65CB8AA /* Pods-MCClipImage_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MCClipImage_Example.release.xcconfig"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		93BAC24D154CD8E7DF426471D7079176 /* Pods-MCClipImage_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MCClipImage_Example-umbrella.h"; sourceTree = "<group>"; };
-		9C1B1135A302A552D23064DCF513163B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		A71701EF9213E1E5DDE3D7B2E43A69D8 /* Pods_MCClipImage_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MCClipImage_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AA0F5716B5C725C83E339092DEA735D2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		ACAD6A131D13FF8CD66BF401DCB4903A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AF55BF215213872CF852573615EEE296 /* Pods-MCClipImage_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MCClipImage_Tests.modulemap"; sourceTree = "<group>"; };
-		B2E6A53DEA2DF7AD3640D68F6A85F4D8 /* MCClipImage.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MCClipImage.modulemap; sourceTree = "<group>"; };
-		B7BD0A5CB026CDE53EF2480472926F45 /* Pods-MCClipImage_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MCClipImage_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		B8612F601A134E3D78DF9114B867D0EE /* MCClipImage-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MCClipImage-umbrella.h"; sourceTree = "<group>"; };
-		BED67C7B115391BD88D2E60B64FEF97B /* MCClipImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MCClipImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C2B6DEDEC54BED16202571B544126819 /* Pods-MCClipImage_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MCClipImage_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		C4A3C81DDCB1FBD61C23BE1B1B518E56 /* Pods-MCClipImage_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MCClipImage_Tests-dummy.m"; sourceTree = "<group>"; };
-		CB9980D8E6017F8D6DB020BC3DFCDD27 /* Pods-MCClipImage_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MCClipImage_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		D663B46E9EA29581CF3A190D8882BC9E /* MCClipImageFunctionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MCClipImageFunctionView.swift; path = MCClipImage/Classes/MCClipImageFunctionView.swift; sourceTree = "<group>"; };
-		DE5845A876A581D01999EA8C71A50562 /* Pods-MCClipImage_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MCClipImage_Example-frameworks.sh"; sourceTree = "<group>"; };
-		E03635DB8E8B1F9668B7D2CFFC1660C5 /* MCClipImage-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MCClipImage-prefix.pch"; sourceTree = "<group>"; };
-		F604898E330C46FA0066DB62750F4791 /* MCClipImage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MCClipImage.xcconfig; sourceTree = "<group>"; };
+		0248CFD0EC067288A5D6DA7C18BA6BFE /* MCClipImageConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MCClipImageConfig.swift; sourceTree = "<group>"; };
+		06F8AAEA7B4DA6FC1AA70CD951A7E22D /* ClipImage_sure@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "ClipImage_sure@3x.png"; path = "MCClipImage/Assets/ClipImage_sure@3x.png"; sourceTree = "<group>"; };
+		083FC7F76BD391A0D064957311BDA765 /* Pods-MCClipImage_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MCClipImage_Example.modulemap"; sourceTree = "<group>"; };
+		0C47228E6D8E9130186432B8BA3BB167 /* UIImage+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		121BAE4E89FBFDD13038C103D828C228 /* ClipImage_sure@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "ClipImage_sure@2x.png"; path = "MCClipImage/Assets/ClipImage_sure@2x.png"; sourceTree = "<group>"; };
+		1CD6FD999AA2188B768572B66A33B2CD /* ClipImage_rotating@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "ClipImage_rotating@2x.png"; path = "MCClipImage/Assets/ClipImage_rotating@2x.png"; sourceTree = "<group>"; };
+		20B484C1D8B18D2647A810BE9CA19436 /* MCClipImageViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MCClipImageViewController.swift; sourceTree = "<group>"; };
+		28C3181A9E2D1F6A4C2A4C90661197D1 /* ClipImage_cancel@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "ClipImage_cancel@2x.png"; path = "MCClipImage/Assets/ClipImage_cancel@2x.png"; sourceTree = "<group>"; };
+		2A4E0B4301593EE8BFAEE614789BC6B6 /* MCClipImage.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = MCClipImage.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		2B93AFC360738AAA6820E8CD38D3553C /* MCClipImage-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MCClipImage-prefix.pch"; sourceTree = "<group>"; };
+		2C13934C48E14C1AAC082CFC10DDEB6F /* ClipImage_setting@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "ClipImage_setting@2x.png"; path = "MCClipImage/Assets/ClipImage_setting@2x.png"; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		34C67F478C65738E9E4E5D073760E659 /* MCClipImage-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MCClipImage-umbrella.h"; sourceTree = "<group>"; };
+		36AECEF991610F6B56992A57E130406B /* Pods-MCClipImage_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MCClipImage_Tests-umbrella.h"; sourceTree = "<group>"; };
+		39A79DC4AC9BD965CDFD784F6EBDD4D3 /* Pods-MCClipImage_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MCClipImage_Tests-dummy.m"; sourceTree = "<group>"; };
+		44E542B298F5A4C474302DD636704FD4 /* MCClipImageBundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = MCClipImageBundle.bundle; path = "MCClipImage-MCClipImageBundle.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4604823145AE98FD8234C2E64A464432 /* UIImagePickerController+Extension .swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIImagePickerController+Extension .swift"; sourceTree = "<group>"; };
+		4766910A9DC8DF03E3275A7DB65731CB /* Pods-MCClipImage_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MCClipImage_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		48EED6D58185D98814AB2CBADA89DA5E /* Pods-MCClipImage_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MCClipImage_Tests.modulemap"; sourceTree = "<group>"; };
+		681858ABBA2BA65E1C04B46E1A3998D6 /* Pods-MCClipImage_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MCClipImage_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		68A762EE73884A4DC71686935582CF65 /* Pods-MCClipImage_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MCClipImage_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		69220D8C473038612824BC5333B3F52C /* MCPickerImageHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MCPickerImageHelper.swift; sourceTree = "<group>"; };
+		71DC768B33BF66A025C98D1A013761E1 /* Pods-MCClipImage_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MCClipImage_Example-frameworks.sh"; sourceTree = "<group>"; };
+		73F34D43E80D2450D43069055FC972F6 /* Pods_MCClipImage_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MCClipImage_Tests.framework; path = "Pods-MCClipImage_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		857BEB46B88C963F1B64E1F4CFC28EF5 /* Pods-MCClipImage_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MCClipImage_Example-Info.plist"; sourceTree = "<group>"; };
+		86ADE1079E22CBFDF52F2C38D503B0F0 /* Pods-MCClipImage_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MCClipImage_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		8C70A717FE36CA4933BD5BE53B5E7F43 /* ClipImage_setting@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "ClipImage_setting@3x.png"; path = "MCClipImage/Assets/ClipImage_setting@3x.png"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A38900E56D46A477E6DBBB0E28E5BF77 /* MCClipImage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MCClipImage-dummy.m"; sourceTree = "<group>"; };
+		A938B585EBF23DA7BA3CB855865BF97B /* MCClipImageTool.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MCClipImageTool.swift; sourceTree = "<group>"; };
+		B1D86847359513959F88F820B0080B1A /* Pods-MCClipImage_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MCClipImage_Example-dummy.m"; sourceTree = "<group>"; };
+		B2B59B132F10BAF3B71AAB94327F80DA /* Pods_MCClipImage_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MCClipImage_Example.framework; path = "Pods-MCClipImage_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9CFCE21318F80D8D5351C974FCD28B1 /* Pods-MCClipImage_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MCClipImage_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C258F2669861060130A50C539AEAF11F /* ClipImage_rotating@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "ClipImage_rotating@3x.png"; path = "MCClipImage/Assets/ClipImage_rotating@3x.png"; sourceTree = "<group>"; };
+		D20040A050E5C4C6FE431F90C82105FF /* MCClipImage-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MCClipImage-Info.plist"; sourceTree = "<group>"; };
+		DB5EEECA5457FFEB832BDB73E0D4E181 /* MCClipImageToolBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MCClipImageToolBar.swift; sourceTree = "<group>"; };
+		DC16459BBC1130486E7A83AA65ABF949 /* MCClipImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MCClipImage.framework; path = MCClipImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE3CB74B253C58AB01363FF0A1973B04 /* Pods-MCClipImage_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MCClipImage_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		DF07D1B17CB0965450529B6B5AC5E91C /* Pods-MCClipImage_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MCClipImage_Example.release.xcconfig"; sourceTree = "<group>"; };
+		E097757260B13BBFE063CC00E862B06D /* MCClipImage.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MCClipImage.modulemap; sourceTree = "<group>"; };
+		E3C1652E3B8759E1CA3F378B026A8A45 /* MCClipImage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MCClipImage.xcconfig; sourceTree = "<group>"; };
+		E6B427CF7EC348FD341198798D371F28 /* ResourceBundle-MCClipImageBundle-MCClipImage-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-MCClipImageBundle-MCClipImage-Info.plist"; sourceTree = "<group>"; };
+		F09D808010BCA34AB366DD618B1CDFB7 /* ClipImage_cancel@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "ClipImage_cancel@3x.png"; path = "MCClipImage/Assets/ClipImage_cancel@3x.png"; sourceTree = "<group>"; };
+		F43ACF913CE2FD6BFD4F29960D77D4B0 /* Pods-MCClipImage_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MCClipImage_Tests-Info.plist"; sourceTree = "<group>"; };
+		F61D88B7507FFE42E8A2D06B8A35D2D7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		F7C864369B08C225D183EB57509CCDA4 /* Pods-MCClipImage_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MCClipImage_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		F7CC8357D8F02C743C0C6FABB550FE4E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		FFC2EF44048A655F599741CA4F87222F /* Pods-MCClipImage_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MCClipImage_Example-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		61EB3CF75772AD575A9C386D4CE9CB87 /* Frameworks */ = {
+		93C8D7E38A2FEDF59897E1EDF1C9C058 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66A2ED6EDEFD37AC28C40560E9D2F651 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8E821BEA29E3F03DA3860F8967A63433 /* Frameworks */ = {
+		9F1EF68B4A19C3FFDE888371F7622FE6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CAD61EF2339387D986DF0D28DF23382F /* Foundation.framework in Frameworks */,
+				FE2B203349FB14CA7D2BFA4571607D6D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B50538CBAD8888DC7D0776CB0EE6051A /* Frameworks */ = {
+		B2308C5B8B764815478D1F281F4BEFB3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7520DECF5F051EB332CBAB39B4516B5F /* Foundation.framework in Frameworks */,
+				67F8240AAC12B65E37D9D0B4B1E1C011 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8DFD2A3886B1DC8A4EFB0807C103AD7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29020A9EAED016EF90695DA97ECA6D43 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		028611AF88B2D5B13340100B8E0F166F /* Development Pods */ = {
+		37643D960EA2C6D566A5000D64A10056 /* MCClipImage */ = {
 			isa = PBXGroup;
 			children = (
-				F87E812AD4AD8A1AE5EFCB2218DAFAF9 /* MCClipImage */,
+				0248CFD0EC067288A5D6DA7C18BA6BFE /* MCClipImageConfig.swift */,
+				A938B585EBF23DA7BA3CB855865BF97B /* MCClipImageTool.swift */,
+				DB5EEECA5457FFEB832BDB73E0D4E181 /* MCClipImageToolBar.swift */,
+				20B484C1D8B18D2647A810BE9CA19436 /* MCClipImageViewController.swift */,
 			);
-			name = "Development Pods";
+			name = MCClipImage;
+			path = MCClipImage/Classes/MCClipImage;
 			sourceTree = "<group>";
 		};
-		5B9C45805DC60C46FFAE4DB0DE8F8642 /* Support Files */ = {
+		4BB966941FF8209B03119B91841F110A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				52287325061CA0B899CB6734FA0EF4F3 /* Info.plist */,
-				B2E6A53DEA2DF7AD3640D68F6A85F4D8 /* MCClipImage.modulemap */,
-				F604898E330C46FA0066DB62750F4791 /* MCClipImage.xcconfig */,
-				4B6F04A1F1B6B9C73F7A513FD9A6F20B /* MCClipImage-dummy.m */,
-				E03635DB8E8B1F9668B7D2CFFC1660C5 /* MCClipImage-prefix.pch */,
-				B8612F601A134E3D78DF9114B867D0EE /* MCClipImage-umbrella.h */,
+				28C3181A9E2D1F6A4C2A4C90661197D1 /* ClipImage_cancel@2x.png */,
+				F09D808010BCA34AB366DD618B1CDFB7 /* ClipImage_cancel@3x.png */,
+				1CD6FD999AA2188B768572B66A33B2CD /* ClipImage_rotating@2x.png */,
+				C258F2669861060130A50C539AEAF11F /* ClipImage_rotating@3x.png */,
+				2C13934C48E14C1AAC082CFC10DDEB6F /* ClipImage_setting@2x.png */,
+				8C70A717FE36CA4933BD5BE53B5E7F43 /* ClipImage_setting@3x.png */,
+				121BAE4E89FBFDD13038C103D828C228 /* ClipImage_sure@2x.png */,
+				06F8AAEA7B4DA6FC1AA70CD951A7E22D /* ClipImage_sure@3x.png */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/MCClipImage";
+			name = Resources;
 			sourceTree = "<group>";
 		};
-		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
+		5963233A16E59438A8156984BA253997 /* Pods-MCClipImage_Tests */ = {
 			isa = PBXGroup;
 			children = (
-				5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		6EC25DC05FC4A042DA531F23B98F3D8B /* Pods-MCClipImage_Tests */ = {
-			isa = PBXGroup;
-			children = (
-				ACAD6A131D13FF8CD66BF401DCB4903A /* Info.plist */,
-				AF55BF215213872CF852573615EEE296 /* Pods-MCClipImage_Tests.modulemap */,
-				28C798A090AF3178FF73ECF03F90EEA5 /* Pods-MCClipImage_Tests-acknowledgements.markdown */,
-				C2B6DEDEC54BED16202571B544126819 /* Pods-MCClipImage_Tests-acknowledgements.plist */,
-				C4A3C81DDCB1FBD61C23BE1B1B518E56 /* Pods-MCClipImage_Tests-dummy.m */,
-				1D0983806447B0F2E16DCBC16F759F71 /* Pods-MCClipImage_Tests-frameworks.sh */,
-				63A020E9AB86337B298069D553583AFF /* Pods-MCClipImage_Tests-resources.sh */,
-				34AA42C9E2CFA88ACB4C3C8233D8EEBE /* Pods-MCClipImage_Tests-umbrella.h */,
-				B7BD0A5CB026CDE53EF2480472926F45 /* Pods-MCClipImage_Tests.debug.xcconfig */,
-				586640660CAE05428824A7FAFA030536 /* Pods-MCClipImage_Tests.release.xcconfig */,
+				48EED6D58185D98814AB2CBADA89DA5E /* Pods-MCClipImage_Tests.modulemap */,
+				B9CFCE21318F80D8D5351C974FCD28B1 /* Pods-MCClipImage_Tests-acknowledgements.markdown */,
+				F7C864369B08C225D183EB57509CCDA4 /* Pods-MCClipImage_Tests-acknowledgements.plist */,
+				39A79DC4AC9BD965CDFD784F6EBDD4D3 /* Pods-MCClipImage_Tests-dummy.m */,
+				F43ACF913CE2FD6BFD4F29960D77D4B0 /* Pods-MCClipImage_Tests-Info.plist */,
+				36AECEF991610F6B56992A57E130406B /* Pods-MCClipImage_Tests-umbrella.h */,
+				DE3CB74B253C58AB01363FF0A1973B04 /* Pods-MCClipImage_Tests.debug.xcconfig */,
+				68A762EE73884A4DC71686935582CF65 /* Pods-MCClipImage_Tests.release.xcconfig */,
 			);
 			name = "Pods-MCClipImage_Tests";
 			path = "Target Support Files/Pods-MCClipImage_Tests";
 			sourceTree = "<group>";
 		};
-		7DB346D0F39D3F0E887471402A8071AB = {
+		72865BA1514A0C7E2F7BEF3BCF0B9F99 /* Pods-MCClipImage_Example */ = {
 			isa = PBXGroup;
 			children = (
-				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				028611AF88B2D5B13340100B8E0F166F /* Development Pods */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				BB60BB6716978F31E5E3668429A073CC /* Products */,
-				C2CF22C9DBCCC95EFDF62844C38354C9 /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		A45B3D01349F259FEFBC5A82DB1D4325 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				AA0F5716B5C725C83E339092DEA735D2 /* LICENSE */,
-				0F357F7A4835B3EA6421E4857E96D446 /* MCClipImage.podspec */,
-				9C1B1135A302A552D23064DCF513163B /* README.md */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		BB60BB6716978F31E5E3668429A073CC /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				BED67C7B115391BD88D2E60B64FEF97B /* MCClipImage.framework */,
-				19977611B239AA046B95DCB781FF7D53 /* Pods_MCClipImage_Example.framework */,
-				A71701EF9213E1E5DDE3D7B2E43A69D8 /* Pods_MCClipImage_Tests.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				5E0D919E635D23B70123790B8308F8EF /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		C2CF22C9DBCCC95EFDF62844C38354C9 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				E3700BB297D3E906D475897E877CB0E0 /* Pods-MCClipImage_Example */,
-				6EC25DC05FC4A042DA531F23B98F3D8B /* Pods-MCClipImage_Tests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		E3700BB297D3E906D475897E877CB0E0 /* Pods-MCClipImage_Example */ = {
-			isa = PBXGroup;
-			children = (
-				634EEA179D8B762512F3872F02C5CFA7 /* Info.plist */,
-				0AFD81B1C1C8DA77F2597C613B611F60 /* Pods-MCClipImage_Example.modulemap */,
-				7B90A73152A030E8EE4FDE281373ED1E /* Pods-MCClipImage_Example-acknowledgements.markdown */,
-				CB9980D8E6017F8D6DB020BC3DFCDD27 /* Pods-MCClipImage_Example-acknowledgements.plist */,
-				37485A1A1DD7365ABCCC51C9B65E3890 /* Pods-MCClipImage_Example-dummy.m */,
-				DE5845A876A581D01999EA8C71A50562 /* Pods-MCClipImage_Example-frameworks.sh */,
-				1886BBFD98B0EBBA70B9CF852659D997 /* Pods-MCClipImage_Example-resources.sh */,
-				93BAC24D154CD8E7DF426471D7079176 /* Pods-MCClipImage_Example-umbrella.h */,
-				0F48066AC19FB7A24C4795DF2B7903CE /* Pods-MCClipImage_Example.debug.xcconfig */,
-				8F0B4690736EDCB7B2E9A636A65CB8AA /* Pods-MCClipImage_Example.release.xcconfig */,
+				083FC7F76BD391A0D064957311BDA765 /* Pods-MCClipImage_Example.modulemap */,
+				4766910A9DC8DF03E3275A7DB65731CB /* Pods-MCClipImage_Example-acknowledgements.markdown */,
+				681858ABBA2BA65E1C04B46E1A3998D6 /* Pods-MCClipImage_Example-acknowledgements.plist */,
+				B1D86847359513959F88F820B0080B1A /* Pods-MCClipImage_Example-dummy.m */,
+				71DC768B33BF66A025C98D1A013761E1 /* Pods-MCClipImage_Example-frameworks.sh */,
+				857BEB46B88C963F1B64E1F4CFC28EF5 /* Pods-MCClipImage_Example-Info.plist */,
+				FFC2EF44048A655F599741CA4F87222F /* Pods-MCClipImage_Example-umbrella.h */,
+				86ADE1079E22CBFDF52F2C38D503B0F0 /* Pods-MCClipImage_Example.debug.xcconfig */,
+				DF07D1B17CB0965450529B6B5AC5E91C /* Pods-MCClipImage_Example.release.xcconfig */,
 			);
 			name = "Pods-MCClipImage_Example";
 			path = "Target Support Files/Pods-MCClipImage_Example";
 			sourceTree = "<group>";
 		};
-		F87E812AD4AD8A1AE5EFCB2218DAFAF9 /* MCClipImage */ = {
+		76C18CBC6563C6C531DAD852889CC457 /* MCClipImage */ = {
 			isa = PBXGroup;
 			children = (
-				D663B46E9EA29581CF3A190D8882BC9E /* MCClipImageFunctionView.swift */,
-				6F0193E1566143BC04C93ED345F35852 /* MCClipImageTool.swift */,
-				7540304DE7865526BE56599B4056ADCE /* MCClipImageViewController.swift */,
-				A45B3D01349F259FEFBC5A82DB1D4325 /* Pod */,
-				5B9C45805DC60C46FFAE4DB0DE8F8642 /* Support Files */,
+				37643D960EA2C6D566A5000D64A10056 /* MCClipImage */,
+				81B86A11D7077A92CAE00F42AEC2E00C /* PickerImageHelper */,
+				7CF3252E7D9250CD8909A963E2D3FCA9 /* Pod */,
+				4BB966941FF8209B03119B91841F110A /* Resources */,
+				AD87F8E64E8E7F0CF4090A488E90C22D /* Support Files */,
 			);
 			name = MCClipImage;
 			path = ../..;
 			sourceTree = "<group>";
 		};
+		7CF3252E7D9250CD8909A963E2D3FCA9 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				F61D88B7507FFE42E8A2D06B8A35D2D7 /* LICENSE */,
+				2A4E0B4301593EE8BFAEE614789BC6B6 /* MCClipImage.podspec */,
+				F7CC8357D8F02C743C0C6FABB550FE4E /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		81B86A11D7077A92CAE00F42AEC2E00C /* PickerImageHelper */ = {
+			isa = PBXGroup;
+			children = (
+				69220D8C473038612824BC5333B3F52C /* MCPickerImageHelper.swift */,
+				0C47228E6D8E9130186432B8BA3BB167 /* UIImage+Extension.swift */,
+				4604823145AE98FD8234C2E64A464432 /* UIImagePickerController+Extension .swift */,
+			);
+			name = PickerImageHelper;
+			path = MCClipImage/Classes/PickerImageHelper;
+			sourceTree = "<group>";
+		};
+		A1E26C223167B25169F299E10C16DA0F /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				72865BA1514A0C7E2F7BEF3BCF0B9F99 /* Pods-MCClipImage_Example */,
+				5963233A16E59438A8156984BA253997 /* Pods-MCClipImage_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		AD87F8E64E8E7F0CF4090A488E90C22D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E097757260B13BBFE063CC00E862B06D /* MCClipImage.modulemap */,
+				E3C1652E3B8759E1CA3F378B026A8A45 /* MCClipImage.xcconfig */,
+				A38900E56D46A477E6DBBB0E28E5BF77 /* MCClipImage-dummy.m */,
+				D20040A050E5C4C6FE431F90C82105FF /* MCClipImage-Info.plist */,
+				2B93AFC360738AAA6820E8CD38D3553C /* MCClipImage-prefix.pch */,
+				34C67F478C65738E9E4E5D073760E659 /* MCClipImage-umbrella.h */,
+				E6B427CF7EC348FD341198798D371F28 /* ResourceBundle-MCClipImageBundle-MCClipImage-Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/MCClipImage";
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				E7CCD798B34DA8D178D711548E1A8FE9 /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				F29314B8EC34E57AF9F25299178E9C97 /* Products */,
+				A1E26C223167B25169F299E10C16DA0F /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E7CCD798B34DA8D178D711548E1A8FE9 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				76C18CBC6563C6C531DAD852889CC457 /* MCClipImage */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		F29314B8EC34E57AF9F25299178E9C97 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DC16459BBC1130486E7A83AA65ABF949 /* MCClipImage.framework */,
+				44E542B298F5A4C474302DD636704FD4 /* MCClipImageBundle.bundle */,
+				B2B59B132F10BAF3B71AAB94327F80DA /* Pods_MCClipImage_Example.framework */,
+				73F34D43E80D2450D43069055FC972F6 /* Pods_MCClipImage_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		C3C1E7AB3D7D0E1B8E0F5377FEFD397A /* Headers */ = {
+		35A146F45EDE8B5332B0A1E9581BEEFF /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4177366B2198AACC15C31118C6989AB1 /* Pods-MCClipImage_Example-umbrella.h in Headers */,
+				5FD234B035E18D11AB65B5F3534C2519 /* Pods-MCClipImage_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F182A3405DB09D86AB540C87BDB2D9EF /* Headers */ = {
+		5A0457D322F0088280F720E43AB551E5 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D26B5CE1D29211E2058F2A687057339 /* Pods-MCClipImage_Tests-umbrella.h in Headers */,
+				8B623A9819809B495C5AA08DF59B0B5D /* Pods-MCClipImage_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F411994B68A594C8A6A164850FFF8790 /* Headers */ = {
+		7477147F0EE131075339C28C8D497036 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D3F471BFE815F61C0964AC205EAE4CA /* MCClipImage-umbrella.h in Headers */,
+				D577A58B440C65E2870C6AC5C130E6C8 /* MCClipImage-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		23C1F5665815E4AE7AF724A4406888D7 /* MCClipImage */ = {
+		5D5FD01263F5BF21758DE5F6E96D5ED9 /* Pods-MCClipImage_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7237D666343CD4AD49AF415D94C6231A /* Build configuration list for PBXNativeTarget "MCClipImage" */;
+			buildConfigurationList = E398A141C645D50A7C882F8758E2384F /* Build configuration list for PBXNativeTarget "Pods-MCClipImage_Tests" */;
 			buildPhases = (
-				8FC921D0B092E3812774E20E63E0E78B /* Sources */,
-				61EB3CF75772AD575A9C386D4CE9CB87 /* Frameworks */,
-				F411994B68A594C8A6A164850FFF8790 /* Headers */,
+				5A0457D322F0088280F720E43AB551E5 /* Headers */,
+				377FD57355B4E78155B14D0B6FA451E2 /* Sources */,
+				F8DFD2A3886B1DC8A4EFB0807C103AD7 /* Frameworks */,
+				D4C09DCEAD45C75C972949420B025042 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-			);
-			name = MCClipImage;
-			productName = MCClipImage;
-			productReference = BED67C7B115391BD88D2E60B64FEF97B /* MCClipImage.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		72F42546064E03B1FE62E7ECA322DC5C /* Pods-MCClipImage_Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2394082D70AC7F0D3CE5037C4AA1E652 /* Build configuration list for PBXNativeTarget "Pods-MCClipImage_Tests" */;
-			buildPhases = (
-				B740DE3A90B9F799B8200B36E9AD1385 /* Sources */,
-				8E821BEA29E3F03DA3860F8967A63433 /* Frameworks */,
-				F182A3405DB09D86AB540C87BDB2D9EF /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C3E464CC9C6F3BB645BAA15748C1488A /* PBXTargetDependency */,
+				D7BF5D0F4F93F82F876ED52913519EEC /* PBXTargetDependency */,
 			);
 			name = "Pods-MCClipImage_Tests";
 			productName = "Pods-MCClipImage_Tests";
-			productReference = A71701EF9213E1E5DDE3D7B2E43A69D8 /* Pods_MCClipImage_Tests.framework */;
+			productReference = 73F34D43E80D2450D43069055FC972F6 /* Pods_MCClipImage_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		D640B7DA3FC09E6603E85AC1EFC76FA2 /* Pods-MCClipImage_Example */ = {
+		B5145E80179655F07402F69BCFDB9DFC /* Pods-MCClipImage_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A67CE4D1B75A5B6AE329D440A507E582 /* Build configuration list for PBXNativeTarget "Pods-MCClipImage_Example" */;
+			buildConfigurationList = F1240E943802C8F2550E0145285447B3 /* Build configuration list for PBXNativeTarget "Pods-MCClipImage_Example" */;
 			buildPhases = (
-				CF4203F2E19B76158D7F4BC5AE504233 /* Sources */,
-				B50538CBAD8888DC7D0776CB0EE6051A /* Frameworks */,
-				C3C1E7AB3D7D0E1B8E0F5377FEFD397A /* Headers */,
+				35A146F45EDE8B5332B0A1E9581BEEFF /* Headers */,
+				D3E86BEA5888DBE13A26BF080CF50BA7 /* Sources */,
+				9F1EF68B4A19C3FFDE888371F7622FE6 /* Frameworks */,
+				1A85DE23E0E42D67DA12D288E18707BE /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				7A4D6CEF7F4BBC2B518E7BBA11FB6557 /* PBXTargetDependency */,
+				2F8DB9348275A2877447A9D601DC1AFE /* PBXTargetDependency */,
 			);
 			name = "Pods-MCClipImage_Example";
 			productName = "Pods-MCClipImage_Example";
-			productReference = 19977611B239AA046B95DCB781FF7D53 /* Pods_MCClipImage_Example.framework */;
+			productReference = B2B59B132F10BAF3B71AAB94327F80DA /* Pods_MCClipImage_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BBF158DA077900644CCCD75F83220219 /* MCClipImage-MCClipImageBundle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6411739FB0E3FB1E58A8CEB4814A1FCA /* Build configuration list for PBXNativeTarget "MCClipImage-MCClipImageBundle" */;
+			buildPhases = (
+				E26C392078A1D8564A11CB474EDA39AF /* Sources */,
+				93C8D7E38A2FEDF59897E1EDF1C9C058 /* Frameworks */,
+				5264293F0BBE4479733906C01DAE80DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MCClipImage-MCClipImageBundle";
+			productName = "MCClipImage-MCClipImageBundle";
+			productReference = 44E542B298F5A4C474302DD636704FD4 /* MCClipImageBundle.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		DC9F1BD3048E39586383BF775224CC7D /* MCClipImage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A4964FEE8AF27E07B4ED3DEE15576D6 /* Build configuration list for PBXNativeTarget "MCClipImage" */;
+			buildPhases = (
+				7477147F0EE131075339C28C8D497036 /* Headers */,
+				686916658B39E3EEDA41B76758895331 /* Sources */,
+				B2308C5B8B764815478D1F281F4BEFB3 /* Frameworks */,
+				FB091E4142156F1BE2D0ED2811226B0E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E88ED7DE2419DDAB0843C0E18B53FF94 /* PBXTargetDependency */,
+			);
+			name = MCClipImage;
+			productName = MCClipImage;
+			productReference = DC16459BBC1130486E7A83AA65ABF949 /* MCClipImage.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 0930;
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
 			};
-			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = BB60BB6716978F31E5E3668429A073CC /* Products */;
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = F29314B8EC34E57AF9F25299178E9C97 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				23C1F5665815E4AE7AF724A4406888D7 /* MCClipImage */,
-				D640B7DA3FC09E6603E85AC1EFC76FA2 /* Pods-MCClipImage_Example */,
-				72F42546064E03B1FE62E7ECA322DC5C /* Pods-MCClipImage_Tests */,
+				DC9F1BD3048E39586383BF775224CC7D /* MCClipImage */,
+				BBF158DA077900644CCCD75F83220219 /* MCClipImage-MCClipImageBundle */,
+				B5145E80179655F07402F69BCFDB9DFC /* Pods-MCClipImage_Example */,
+				5D5FD01263F5BF21758DE5F6E96D5ED9 /* Pods-MCClipImage_Tests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		1A85DE23E0E42D67DA12D288E18707BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5264293F0BBE4479733906C01DAE80DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F20D8A3B7B8C9EE3D7F1C1F6446552D /* ClipImage_cancel@2x.png in Resources */,
+				BDDA318F0CAD2DA9123043C4A85DC65C /* ClipImage_cancel@3x.png in Resources */,
+				28DA52A89CE235E8D1035208B46C53A4 /* ClipImage_rotating@2x.png in Resources */,
+				A12524BC89852A047AA6C380FDE26F9D /* ClipImage_rotating@3x.png in Resources */,
+				4B7AAEA55C3A9FC3F2455268E4E96DF8 /* ClipImage_setting@2x.png in Resources */,
+				08C6AE257A288D063D83129EF7B31D77 /* ClipImage_setting@3x.png in Resources */,
+				6811A4479169630858D1EADFB88F5814 /* ClipImage_sure@2x.png in Resources */,
+				961D883F9910C35D17495A539A551963 /* ClipImage_sure@3x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4C09DCEAD45C75C972949420B025042 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB091E4142156F1BE2D0ED2811226B0E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95C6A762FB150DE52C647D3BBD7CAEAA /* MCClipImageBundle.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		8FC921D0B092E3812774E20E63E0E78B /* Sources */ = {
+		377FD57355B4E78155B14D0B6FA451E2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66BE13067A89D8034B11B4A9D41D3C23 /* MCClipImage-dummy.m in Sources */,
-				6428A84EADFF8BDAA82BEA3C3F4E6B97 /* MCClipImageFunctionView.swift in Sources */,
-				D357BCA3378BC568CFE549D2D813269D /* MCClipImageTool.swift in Sources */,
-				F4ACD40E6CB936B9CF9F619C752AAA49 /* MCClipImageViewController.swift in Sources */,
+				21A37A6396541FE58A08EE15B5190F48 /* Pods-MCClipImage_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B740DE3A90B9F799B8200B36E9AD1385 /* Sources */ = {
+		686916658B39E3EEDA41B76758895331 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				931501995011B7C176913B828852F272 /* Pods-MCClipImage_Tests-dummy.m in Sources */,
+				27C8178E0BD715A751447CEC952CBF71 /* MCClipImage-dummy.m in Sources */,
+				96DA5A92BC6E2952017E0B87DF7FD4CE /* MCClipImageConfig.swift in Sources */,
+				EBA78DC6D5FCE151210FD1FAAA5410FE /* MCClipImageTool.swift in Sources */,
+				221856CC9EB1DB4DD9531C241391B6F2 /* MCClipImageToolBar.swift in Sources */,
+				6A5DB304C3DFCA33F0E6AE33C50689A4 /* MCClipImageViewController.swift in Sources */,
+				BFC1836CFADACB3F6557C1391A1668C2 /* MCPickerImageHelper.swift in Sources */,
+				66CA2FFB6F625B1CD06A807F00C8B599 /* UIImage+Extension.swift in Sources */,
+				F3F2EE67DC9A5309F9AB15DB49D7332F /* UIImagePickerController+Extension .swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CF4203F2E19B76158D7F4BC5AE504233 /* Sources */ = {
+		D3E86BEA5888DBE13A26BF080CF50BA7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D6E3C9E66DCD425BE7A524BC3322698 /* Pods-MCClipImage_Example-dummy.m in Sources */,
+				4494AFEBCDB9994BCBF28368D9BBC6BE /* Pods-MCClipImage_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E26C392078A1D8564A11CB474EDA39AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		7A4D6CEF7F4BBC2B518E7BBA11FB6557 /* PBXTargetDependency */ = {
+		2F8DB9348275A2877447A9D601DC1AFE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = MCClipImage;
-			target = 23C1F5665815E4AE7AF724A4406888D7 /* MCClipImage */;
-			targetProxy = 5C5C63472C8B8470B17A9B9C7DA3FEE2 /* PBXContainerItemProxy */;
+			target = DC9F1BD3048E39586383BF775224CC7D /* MCClipImage */;
+			targetProxy = 519FA9E6CA6C9D2415CA022C4D00E951 /* PBXContainerItemProxy */;
 		};
-		C3E464CC9C6F3BB645BAA15748C1488A /* PBXTargetDependency */ = {
+		D7BF5D0F4F93F82F876ED52913519EEC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-MCClipImage_Example";
-			target = D640B7DA3FC09E6603E85AC1EFC76FA2 /* Pods-MCClipImage_Example */;
-			targetProxy = 329DACB61E01423C9235176A4DE38F0E /* PBXContainerItemProxy */;
+			target = B5145E80179655F07402F69BCFDB9DFC /* Pods-MCClipImage_Example */;
+			targetProxy = 7FEE3EC46EF84BAF4B778D8B15820276 /* PBXContainerItemProxy */;
+		};
+		E88ED7DE2419DDAB0843C0E18B53FF94 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "MCClipImage-MCClipImageBundle";
+			target = BBF158DA077900644CCCD75F83220219 /* MCClipImage-MCClipImageBundle */;
+			targetProxy = 282918EA7BC17005F20ED1246B25E807 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0830736AFDF0B3734F161AFF37DCC318 /* Release */ = {
+		3B61E9B5FFCEE2455E29627602B73AAA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F604898E330C46FA0066DB62750F4791 /* MCClipImage.xcconfig */;
+			baseConfigurationReference = E3C1652E3B8759E1CA3F378B026A8A45 /* MCClipImage.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/MCClipImage";
+				INFOPLIST_FILE = "Target Support Files/MCClipImage/ResourceBundle-MCClipImageBundle-MCClipImage-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = MCClipImageBundle;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		622596A14F430446C8FAB2DCAD3EE799 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3C1652E3B8759E1CA3F378B026A8A45 /* MCClipImage.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -404,7 +574,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_PREFIX_HEADER = "Target Support Files/MCClipImage/MCClipImage-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MCClipImage/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/MCClipImage/MCClipImage-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -414,8 +584,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -423,9 +592,25 @@
 			};
 			name = Release;
 		};
-		0C50AB321F9CF23265766673DA865C4A /* Debug */ = {
+		7DEEE6434FF56A8EEBF4122F28ECEB82 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F604898E330C46FA0066DB62750F4791 /* MCClipImage.xcconfig */;
+			baseConfigurationReference = E3C1652E3B8759E1CA3F378B026A8A45 /* MCClipImage.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/MCClipImage";
+				INFOPLIST_FILE = "Target Support Files/MCClipImage/ResourceBundle-MCClipImageBundle-MCClipImage-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = MCClipImageBundle;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		8976A787925FF6815F41D4A59B8947B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3C1652E3B8759E1CA3F378B026A8A45 /* MCClipImage.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -437,7 +622,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_PREFIX_HEADER = "Target Support Files/MCClipImage/MCClipImage-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MCClipImage/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/MCClipImage/MCClipImage-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -447,17 +632,16 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		68EE8394B7FE91E0746EFA619E9CADAD /* Release */ = {
+		9C2FE8F1FE23DDF2EAF92E3D5BA0D60E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 586640660CAE05428824A7FAFA030536 /* Pods-MCClipImage_Tests.release.xcconfig */;
+			baseConfigurationReference = DF07D1B17CB0965450529B6B5AC5E91C /* Pods-MCClipImage_Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -469,12 +653,12 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-MCClipImage_Tests/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-MCClipImage_Example/Pods-MCClipImage_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-MCClipImage_Tests/Pods-MCClipImage_Tests.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-MCClipImage_Example/Pods-MCClipImage_Example.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -489,9 +673,9 @@
 			};
 			name = Release;
 		};
-		7CD0FF5E1EE141F087EE3FD556A4AE48 /* Debug */ = {
+		AABC4C6AF1ECCBDDE96563F1BB094AD0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B7BD0A5CB026CDE53EF2480472926F45 /* Pods-MCClipImage_Tests.debug.xcconfig */;
+			baseConfigurationReference = 86ADE1079E22CBFDF52F2C38D503B0F0 /* Pods-MCClipImage_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -503,12 +687,12 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-MCClipImage_Tests/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-MCClipImage_Example/Pods-MCClipImage_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-MCClipImage_Tests/Pods-MCClipImage_Tests.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-MCClipImage_Example/Pods-MCClipImage_Example.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -522,7 +706,7 @@
 			};
 			name = Debug;
 		};
-		8B33C5230DE4A9DFA6D8F46505DD7AF7 /* Debug */ = {
+		B0087CB4594321EF41619F3181FE120E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -554,8 +738,66 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		B8BCBD0110C2658BB5DAADB9B7D97B92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -576,18 +818,21 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		911444CACF5B620527FFCAF2BD32BE7F /* Debug */ = {
+		BC3F36857C11D2468567A051593B97D6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0F48066AC19FB7A24C4795DF2B7903CE /* Pods-MCClipImage_Example.debug.xcconfig */;
+			baseConfigurationReference = 68A762EE73884A4DC71686935582CF65 /* Pods-MCClipImage_Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -599,12 +844,12 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-MCClipImage_Example/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-MCClipImage_Tests/Pods-MCClipImage_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-MCClipImage_Example/Pods-MCClipImage_Example.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-MCClipImage_Tests/Pods-MCClipImage_Tests.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -612,42 +857,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		B20053A72B676E58AD4B7BECC3EB02AC /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8F0B4690736EDCB7B2E9A636A65CB8AA /* Pods-MCClipImage_Example.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-MCClipImage_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-MCClipImage_Example/Pods-MCClipImage_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -655,104 +864,88 @@
 			};
 			name = Release;
 		};
-		B42B54097A876E8A982CBF5DAA91B1AB /* Release */ = {
+		FF20FCD905B245542FA40CC848BA3F17 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE3CB74B253C58AB01363FF0A1973B04 /* Pods-MCClipImage_Tests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MCClipImage_Tests/Pods-MCClipImage_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MCClipImage_Tests/Pods-MCClipImage_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2394082D70AC7F0D3CE5037C4AA1E652 /* Build configuration list for PBXNativeTarget "Pods-MCClipImage_Tests" */ = {
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7CD0FF5E1EE141F087EE3FD556A4AE48 /* Debug */,
-				68EE8394B7FE91E0746EFA619E9CADAD /* Release */,
+				B8BCBD0110C2658BB5DAADB9B7D97B92 /* Debug */,
+				B0087CB4594321EF41619F3181FE120E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+		5A4964FEE8AF27E07B4ED3DEE15576D6 /* Build configuration list for PBXNativeTarget "MCClipImage" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8B33C5230DE4A9DFA6D8F46505DD7AF7 /* Debug */,
-				B42B54097A876E8A982CBF5DAA91B1AB /* Release */,
+				8976A787925FF6815F41D4A59B8947B0 /* Debug */,
+				622596A14F430446C8FAB2DCAD3EE799 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7237D666343CD4AD49AF415D94C6231A /* Build configuration list for PBXNativeTarget "MCClipImage" */ = {
+		6411739FB0E3FB1E58A8CEB4814A1FCA /* Build configuration list for PBXNativeTarget "MCClipImage-MCClipImageBundle" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0C50AB321F9CF23265766673DA865C4A /* Debug */,
-				0830736AFDF0B3734F161AFF37DCC318 /* Release */,
+				7DEEE6434FF56A8EEBF4122F28ECEB82 /* Debug */,
+				3B61E9B5FFCEE2455E29627602B73AAA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A67CE4D1B75A5B6AE329D440A507E582 /* Build configuration list for PBXNativeTarget "Pods-MCClipImage_Example" */ = {
+		E398A141C645D50A7C882F8758E2384F /* Build configuration list for PBXNativeTarget "Pods-MCClipImage_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				911444CACF5B620527FFCAF2BD32BE7F /* Debug */,
-				B20053A72B676E58AD4B7BECC3EB02AC /* Release */,
+				FF20FCD905B245542FA40CC848BA3F17 /* Debug */,
+				BC3F36857C11D2468567A051593B97D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1240E943802C8F2550E0145285447B3 /* Build configuration list for PBXNativeTarget "Pods-MCClipImage_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AABC4C6AF1ECCBDDE96563F1BB094AD0 /* Debug */,
+				9C2FE8F1FE23DDF2EAF92E3D5BA0D60E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 }

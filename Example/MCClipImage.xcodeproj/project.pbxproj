@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		42288EE322CA14C400E3D3A5 /* MCOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42288EE222CA14C400E3D3A5 /* MCOneViewController.swift */; };
+		42288EE522CA14CC00E3D3A5 /* MCTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42288EE422CA14CC00E3D3A5 /* MCTwoViewController.swift */; };
+		42288EE722CA14DC00E3D3A5 /* MCThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42288EE622CA14DC00E3D3A5 /* MCThreeViewController.swift */; };
+		42288EE922CA14E400E3D3A5 /* MCFourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42288EE822CA14E400E3D3A5 /* MCFourViewController.swift */; };
+		42288EEB22CA180900E3D3A5 /* MCBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42288EEA22CA180900E3D3A5 /* MCBaseViewController.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -29,9 +34,14 @@
 
 /* Begin PBXFileReference section */
 		0B2EAADBAE5A436C97899793 /* Pods_MCClipImage_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MCClipImage_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1018F842C9FEBEFDFF621402 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		2071369D2E5227AF31A0E194 /* MCClipImage.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = MCClipImage.podspec; path = ../MCClipImage.podspec; sourceTree = "<group>"; };
+		1018F842C9FEBEFDFF621402 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		2071369D2E5227AF31A0E194 /* MCClipImage.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MCClipImage.podspec; path = ../MCClipImage.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		2CCDD48981822D2CF51842B9 /* Pods-MCClipImage_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MCClipImage_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MCClipImage_Example/Pods-MCClipImage_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		42288EE222CA14C400E3D3A5 /* MCOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCOneViewController.swift; sourceTree = "<group>"; };
+		42288EE422CA14CC00E3D3A5 /* MCTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCTwoViewController.swift; sourceTree = "<group>"; };
+		42288EE622CA14DC00E3D3A5 /* MCThreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCThreeViewController.swift; sourceTree = "<group>"; };
+		42288EE822CA14E400E3D3A5 /* MCFourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCFourViewController.swift; sourceTree = "<group>"; };
+		42288EEA22CA180900E3D3A5 /* MCBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCBaseViewController.swift; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* MCClipImage_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MCClipImage_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -46,7 +56,7 @@
 		B0E70BE96DF14E06B66514C4 /* Pods-MCClipImage_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MCClipImage_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MCClipImage_Tests/Pods-MCClipImage_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		C307C132702AC6208B87FA17 /* Pods_MCClipImage_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MCClipImage_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C363BD29225A5FC24206D86F /* Pods-MCClipImage_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MCClipImage_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-MCClipImage_Example/Pods-MCClipImage_Example.release.xcconfig"; sourceTree = "<group>"; };
-		C78C7FFF9ABD3D5AF7472CAC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		C78C7FFF9ABD3D5AF7472CAC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +79,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		42288EE122CA14B400E3D3A5 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				42288EE222CA14C400E3D3A5 /* MCOneViewController.swift */,
+				42288EE422CA14CC00E3D3A5 /* MCTwoViewController.swift */,
+				42288EE622CA14DC00E3D3A5 /* MCThreeViewController.swift */,
+				42288EE822CA14E400E3D3A5 /* MCFourViewController.swift */,
+				42288EEA22CA180900E3D3A5 /* MCBaseViewController.swift */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +115,7 @@
 		607FACD21AFB9204008FA782 /* Example for MCClipImage */ = {
 			isa = PBXGroup;
 			children = (
+				42288EE122CA14B400E3D3A5 /* Demo */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
@@ -170,7 +193,7 @@
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				EEB78A146224570AEC0D9DA3 /* [CP] Embed Pods Frameworks */,
+				FC80951A4B83D469ACF92B27 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -207,16 +230,16 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1010;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1010;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
 				};
@@ -297,13 +320,13 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		EEB78A146224570AEC0D9DA3 /* [CP] Embed Pods Frameworks */ = {
+		FC80951A4B83D469ACF92B27 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-MCClipImage_Example/Pods-MCClipImage_Example-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-MCClipImage_Example/Pods-MCClipImage_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/MCClipImage/MCClipImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -312,7 +335,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MCClipImage_Example/Pods-MCClipImage_Example-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MCClipImage_Example/Pods-MCClipImage_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -323,7 +346,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				42288EEB22CA180900E3D3A5 /* MCBaseViewController.swift in Sources */,
+				42288EE522CA14CC00E3D3A5 /* MCTwoViewController.swift in Sources */,
+				42288EE922CA14E400E3D3A5 /* MCFourViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				42288EE722CA14DC00E3D3A5 /* MCThreeViewController.swift in Sources */,
+				42288EE322CA14C400E3D3A5 /* MCOneViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,12 +405,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -430,12 +460,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -474,8 +506,7 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -489,8 +520,7 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
@@ -510,8 +540,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MCClipImage_Example.app/MCClipImage_Example";
 			};
 			name = Debug;
@@ -528,8 +557,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MCClipImage_Example.app/MCClipImage_Example";
 			};
 			name = Release;
