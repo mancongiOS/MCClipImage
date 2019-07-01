@@ -1,6 +1,6 @@
 {
   "name": "MCClipImage",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "summary": "图片的处理，自定义裁剪比例，图片旋转，裁剪圆形图片",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/mancongiOS",
@@ -13,12 +13,12 @@
   },
   "source": {
     "git": "https://github.com/mancongiOS/MCClipImage.git",
-    "tag": "1.0.2"
+    "tag": "1.0.3"
   },
+  "swift_versions": "4.2",
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "MCClipImage/Classes/**/*",
   "resource_bundles": {
     "MCClipImageBundle": [
       "MCClipImage/Assets/*.png"
@@ -31,7 +31,8 @@
     },
     {
       "name": "MCPickerImageHelper",
-      "source_files": "MCClipImage/Classes/MCPickerImageHelper/*.swift"
+      "source_files": "MCClipImage/Classes/PickerImageHelper/*.swift"
     }
-  ]
+  ],
+  "swift_version": "4.2"
 }
