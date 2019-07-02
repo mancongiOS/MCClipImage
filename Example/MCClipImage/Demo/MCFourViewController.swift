@@ -17,7 +17,7 @@ class MCFourViewController: MCBaseViewController {
     
     override func editEvent() {
         
-        // MCPickerImageHelper，如果声明为局部对象的话，方法走完就被销毁了。但是MCPickerImageHelper对象又作为n内部pickerViewController的代理执行者，执行者没了，所以就不响应pickerViewController的代理方法。 所以一定不能让MCPickerImageHelper对象被销毁，要么懒加载该对象要么成为全局的。
+        // MCPickerImageHelper，如果声明为局部对象的话，走完就被销毁了。但是MCPickerImageHelper对象又作为n内部pickerViewController的代理执行者，执行者没了，所以就不响应pickerViewController的代理方法。 所以一定不能让MCPickerImageHelper对象被销毁，要么懒加载该对象要么成为全局的。
         helper.openPhotoLibrary(self)
     }
     

@@ -19,7 +19,7 @@ public class MCClipImageConfig: NSObject {
     public var clipScale: CGFloat = 2
     /// 是否裁切圆形
     public var isClipRound: Bool = false
-    /// 覆盖层的b背景颜色
+    /// 覆盖层的背景颜色
     public var overlayBackgroundColor =  UIColor.black
     /// 裁切框的颜色
     public var clipBoxColor =  UIColor.green
