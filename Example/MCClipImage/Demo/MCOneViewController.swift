@@ -16,7 +16,7 @@ class MCOneViewController: MCBaseViewController {
     
     override func editEvent() {
 
-        let image = UIImage.init(named: "Personal_openMember")
+        let image = UIImage.init(named: "keyboard")
         
         
         let config = MCClipImageConfig()

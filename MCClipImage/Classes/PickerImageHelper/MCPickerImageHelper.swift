@@ -87,6 +87,7 @@ extension MCPickerImageHelper: UIImagePickerControllerDelegate,UINavigationContr
     
     public func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         
+        
         let mediaType = info[UIImagePickerController.InfoKey.mediaType] as! String
         
         if mediaType == String(kUTTypeImage) {
@@ -97,15 +98,12 @@ extension MCPickerImageHelper: UIImagePickerControllerDelegate,UINavigationContr
             
             let pickedImage = self.allowsEditing ? originalImage.crop(toRect: rect) : originalImage
             
-            // 是否支持相册
-            if UIImagePickerController.isValidImagePickerType(type: UIImagePickerType.UIImagePickerTypePhotoLibrary) {
-                // 相册
-            } else if (UIImagePickerController.isValidImagePickerType(type: UIImagePickerType.UIImagePickerTypeCamera)){
-                // 相机
-                // 图片保存到相册
-                UIImageWriteToSavedPhotosAlbum(pickedImage, self, Selector(("imageSave:error:contextInfo:")), nil)
-            }
             
+            // 保存
+            if picker.sourceType == .camera {
+                UIImageWriteToSavedPhotosAlbum(pickedImage, self, #selector(saveImage(image:didFinishSavingWithError:contextInfo:)), nil)
+            }
+                        
             
             delegate?.pickerImageHelper(self, didFinishPickImage: pickedImage)
             
@@ -118,5 +116,14 @@ extension MCPickerImageHelper: UIImagePickerControllerDelegate,UINavigationContr
         delegate?.pickerImageHelperDidCancel?(self)
         picker.dismiss(animated: true, completion: nil)
     }
+    
+    @objc private func saveImage(image: UIImage, didFinishSavingWithError error: NSError?, contextInfo: AnyObject) {
+      
+        
+        if error != nil {
+            print("保存图片失败")
+        }
+    }
+    
 }
 

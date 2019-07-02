@@ -43,5 +43,7 @@
 	<string>需要访问您的相机，以便您正常使用拍摄、购物、修改个人资料等服务</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>需要访问您的相册，以便您正常使用购物、修改个人资料等服务</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>需要访问您的相册，以便您正常使用购物、修改个人资料等服务</string>
 </dict>
 </plist>
